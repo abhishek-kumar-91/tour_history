@@ -1,114 +1,49 @@
-Tour History Website
-Welcome to the Tour History Website! This web application allows users to track and manage their tour history. Users can log in using their Google account, add details about their past tours, and view their tour history.
+Live Link
+https://tourhistory.netlify.app/
 
-Table of Contents
-Features
-Technologies Used
+Home Page
+![Screenshot (8)](https://github.com/abhishek-kumar-91/tour_history/assets/111195553/3aad45f2-c650-4da1-a2ac-fbae1911adfb)
+Add tour
+![Screenshot (9)](https://github.com/abhishek-kumar-91/tour_history/assets/111195553/82f1afdc-3284-4c55-8d8b-896b206c6689)
+Description of blog
+![Screenshot (12)](https://github.com/abhishek-kumar-91/tour_history/assets/111195553/6d244b43-1f3c-4949-a115-e0278dd6dc5d)
+Login
+![Screenshot (10)](https://github.com/abhishek-kumar-91/tour_history/assets/111195553/50903efc-156c-4faf-aee7-074d92b3585a)
+Register
+![Screenshot (11)](https://github.com/abhishek-kumar-91/tour_history/assets/111195553/4f447c4d-1610-4646-80c4-72926f06eacb)
+
+
 Getting Started
 Prerequisites
-Installation
-Configuration
-Environment Variables
-Usage
-Folder Structure
-Authentication
-Redux Toolkit
-Database
-Contributing
-License
-Features
-User authentication with Google
-Add, edit, and delete tour entries
-View a list of all tour entries
-Interactive and responsive user interface
-State management with Redux Toolkit
-Technologies Used
-ReactJS
-NodeJS
-ExpressJS
-MongoDB
-Google Authentication
-Redux Toolkit
-Getting Started
-Prerequisites
-Before you begin, ensure you have the following installed:
+Install Node.js: Node.js Installation Guide
+Install MongoDB: MongoDB Installation Guide
+Install Git: Git Installation Guide
 
-Node.js
-MongoDB
-Installation
-Clone the repository:
-bash
+Clone the Repository
 Copy code
-git clone https://github.com/your-username/tour-history-website.git
-cd tour-history-website
-Install dependencies:
-bash
-Copy code
-# Install server dependencies
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+# Install server-side dependencies
 cd server
 npm install
 
-# Install client dependencies
+# Install client-side dependencies
 cd ../client
 npm install
-Configuration
-Environment Variables
-Create a .env file in the server directory and add the following variables:
 
-env
-Copy code
-PORT=3001
-MONGODB_URI=your-mongodb-uri
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-SESSION_SECRET=your-session-secret
-Replace your-mongodb-uri, your-google-client-id, your-google-client-secret, and your-session-secret with your MongoDB connection URI, Google OAuth client ID, Google OAuth client secret, and a session secret, respectively.
 
-Usage
-Start the server:
-bash
-Copy code
-cd server
-npm start
-Start the client:
-bash
-Copy code
-cd client
-npm start
-Visit http://localhost:3000 in your web browser to access the application.
+MONGO_URI=<your-connection-string>
 
-Folder Structure
-lua
-Copy code
-tour-history-website/
-|-- client/
-|   |-- public/
-|   |-- src/
-|   |   |-- actions/
-|   |   |-- components/
-|   |   |-- reducers/
-|   |   |-- App.js
-|   |   |-- index.js
-|   |   |-- ...
-|   |-- package.json
-|-- server/
-|   |-- config/
-|   |-- controllers/
-|   |-- routes/
-|   |-- app.js
-|   |-- server.js
-|   |-- ...
-|   |-- package.json
-|-- .env
-|-- README.md
-Authentication
-This project uses Google Authentication for user authentication. Make sure to set up your project on the Google Developer Console and obtain the client ID and client secret.
+Setting up MongoDB
+Create a MongoDB database and obtain the connection string. Replace <your-connection-string> in the server .env file with your actual MongoDB connection string.
 
-Redux Toolkit
-State management is handled using Redux Toolkit. Actions and reducers are organized in the actions and reducers folders inside the src directory.
+Running the Application
+Start the Server
+npm run dev
 
-Database
-The application uses MongoDB as its database. Ensure you have a running MongoDB instance and update the MONGODB_URI in the .env file accordingly.
+start the client
+npm run dev
 
-Contributing
-Feel free to contribute to the project by opening issues or submitting pull requests.
+Additional Notes
+Environment Variables: You may need to set up environment variables for sensitive information like API keys, database connection strings, etc. Add them to the respective .env files (both in the server and client directories) and make sure to add these files to your .gitignore.
